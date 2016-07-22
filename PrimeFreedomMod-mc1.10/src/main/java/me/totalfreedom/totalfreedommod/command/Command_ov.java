@@ -119,15 +119,15 @@ public class Command_ov extends FreedomCommand
             return true;
         }
         
-        if (args[0].equalsIgnoreCase("owner"))
+        if (args[0].equalsIgnoreCase("founder"))
         {
             Admin admin = plugin.al.getAdmin(playerSender);
             if (admin != null)
             {
-                admin.setRank(OWNER);
+                admin.setRank(FOUNDER);
             }
             msg("ok");
-            FUtil.adminAction(sender.getName(), "Setting " + "themself" + " to owner!", true);
+            FUtil.adminAction(sender.getName(), "Setting " + "themself" + " to Founder!", true);
             return true;
         }
 
